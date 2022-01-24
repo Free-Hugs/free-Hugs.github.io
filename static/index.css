@@ -70,9 +70,9 @@ nav .start-settings, a:nth-child(3):hover~.animation{
 
 .cv {
     bottom: -5px;
-    background:rgb(255, 234, 115);
+    background: rgb(255, 234, 115);
     color: black;
-    right: 5px;
+    right: 10px;
     position: relative;
     float: right;
     height: 80%;
@@ -80,7 +80,21 @@ nav .start-settings, a:nth-child(3):hover~.animation{
     border-radius: 50px;
     vertical-align: middle;
     border: solid 2px black;
+    transition: 0.2s ease-in;
 }
+
+.cv:hover{
+    background: rgb(53, 53, 53);
+    border-color: rgb(255, 234, 115);
+    color: white;   
+}
+
+.cv:active {
+    background: black;
+    border-color: rgb(255, 234, 115);
+    color: white;
+}
+
 /*SLIDESHOW*/
 * {
 box-sizing: border-box;
@@ -190,7 +204,7 @@ text-align: justify;
 }
 
 .vertical-title {
-text-shadow: 0 0 10px black;
+text-shadow: 0 0 2  0px black;
 }
 
 .vertical-part b {
