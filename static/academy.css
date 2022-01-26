@@ -4,48 +4,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
-background: rgb(32, 32, 32);
+    background: rgb(32, 32, 32);
+    text-shadow: 0 0 40px black;
 }
 
+
 section{
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 section:nth-child(1){
-color: #fff;
+    color: #fff;
 }
 
 section:nth-child(2){
-color: white;
+    color: white;
 }
 
 section:nth-child(3){
-color: #fff;
+    color: #fff;
 }
 
 section:nth-child(4){
-color: white;
+    color: white;
 }
 
 section .container{
-margin: 100px;
+    margin: 100px;
 }
 
 section h1{
-font-size: 60px;
+    font-size: 60px;
 }
 
 section h2{
-font-size: 40px;
-text-align: center;
-text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 section h3 {
@@ -55,22 +58,25 @@ section h3 {
 }
 
 section .cards{
-display: flex;
+    display: flex;
+
 }
 
 section .cards .text-card{
-background: rgb(53, 53, 53);
-border: solid 3px rgb(255, 234, 115);
-border-radius: 10px;
-margin: 20px;
-padding: 20px;
+    text-shadow: none;
+    background: rgb(53, 53, 53);
+    border: solid 3px rgb(255, 234, 115);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+
 }
 
 section .cards .text-card h3{
-font-size: 30px;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 900px){
@@ -84,17 +90,25 @@ section .cards{
 }
 
 .reveal{
-position: relative;
-transform: translateY(150px);
-opacity: 0;
-transition: all 2s ease;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
 }
 
 .reveal.active{
-transform: translateY(0px);
-opacity: 1;
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .tsp {
     background-image: url("../TSP.jpg");
+}
+
+.stanislas {
+    background-image: url("../stanislas.jpg");
+}
+
+.sjp {
+    background-image: url("../saintJeanDePassy.jpg");
 }
