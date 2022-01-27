@@ -17,35 +17,43 @@
       <div class="animation start-projects"></div>
   </nav>
 
-  <div class="w3-bar w3-black">
-    <button class="w3-bar-item project-btn" onclick="openCity('London')">Jukebox</button>
-    <button class="w3-bar-item project-btn" onclick="openCity('Paris')">Budget Planner</button>
-    <button class="w3-bar-item project-btn" onclick="openCity('Tokyo')">Hack and Slash</button>
+  <div class="bar">
+    <button class="bar-item project-btn active-project" onclick="openCity(event, 'London')"><b>Jukebox</b></button>
+    <button class="bar-item project-btn" onclick="openCity(event, 'Paris')"><b>Budget Planner</b></button>
+    <button class="bar-item project-btn" onclick="openCity(event, 'Tokyo')"><b>Hack and Slash</b></button>
   </div>
   
   <div id="London" class="container project">
     <h2>Jukebox</h2>
+    <br>
     <p>London is the capital city of England.</p>
   </div>
   
   <div id="Paris" class="container project" style="display:none">
     <h2>Budget Planner</h2>
+    <br>
     <p>Paris is the capital of France.</p> 
   </div>
   
   <div id="Tokyo" class="container project" style="display:none">
     <h2>Hack and Slash</h2>
+    <br>
     <p>Tokyo is the capital of Japan.</p>
   </div>
   
   <script>
-  function openCity(cityName) {
+  function openCity(evt, cityName) {
     var i;
     var x = document.getElementsByClassName("project");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+        x[i].style.display = "none";
     }
-    document.getElementById(cityName).style.display = "block";  
+    var activebtn = document.getElementsByClassName("project-btn");
+    for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" active-project", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active-project";
   }
   </script>
 </body>

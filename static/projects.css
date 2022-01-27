@@ -1,15 +1,46 @@
-
-
-.w3-bar-item{
+.bar-item{
     padding:8px 16px;
     float:left;
     width:auto;
     border:none;
     display:block;
     outline:0;
+    height: 100%;
+
 }
 
-.w3-bar{
+.bar{
+    height: 50px;
     width:100%;
     overflow:hidden;
 }
+
+.container{
+    margin: 2em 2em 2em 2em;
+    padding: auto;
+    position: relative;
+}
+
+.project-btn {
+    position: relative;
+    width: 33%;
+    text-align: center;
+    font-family: 'Montserrat';
+    z-index: 1;
+    color: white;
+    background-color: rgb(31, 31, 31);
+}
+
+.project-btn:hover{
+    background: rgb(255, 234, 115);
+    color: black;
+}
+
+.active-project{
+    background: rgb(255, 234, 115);
+    color: black;   
+}
+
+
+
+
