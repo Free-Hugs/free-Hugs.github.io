@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(10, 10, 10);
+}
+
 .bar-item{
     padding:8px 16px;
     float:left;
@@ -13,6 +17,7 @@
     height: 50px;
     width:100%;
     overflow:hidden;
+    background-color:rgb(31, 31, 31);
 }
 
 .container{
