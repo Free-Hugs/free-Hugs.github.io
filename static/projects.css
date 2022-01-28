@@ -34,11 +34,13 @@ body {
     z-index: 1;
     color: white;
     background-color: rgb(31, 31, 31);
+    border-bottom: solid 5px rgb(255, 234, 115);
 }
 
 .project-btn:hover{
     background: rgb(255, 234, 115);
     color: black;
+    cursor: pointer;
 }
 
 .active-project{
