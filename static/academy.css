@@ -59,7 +59,6 @@ section h3 {
 
 section .cards{
     display: flex;
-
 }
 
 section .cards .text-card{
@@ -69,7 +68,6 @@ section .cards .text-card{
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
-
 }
 
 section .cards .text-card h3{
